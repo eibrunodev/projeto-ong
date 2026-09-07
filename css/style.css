@@ -1,0 +1,199 @@
+
+:root {
+  --cor-primaria: #2f6f4f;
+  --cor-primaria-escura: #204d37;
+  --cor-secundaria: #f4a63c;
+  --cor-fundo: #faf9f6;
+  --cor-texto: #262626;
+  --cor-borda: #d8d3c8;
+  --fonte-base: "Segoe UI", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte-base);
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--cor-primaria-escura);
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+a {
+  color: var(--cor-primaria);
+}
+
+header {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+
+header h1 {
+  color: #fff;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.6rem;
+}
+
+.header-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 4px;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.ativo {
+  border-bottom: 3px solid var(--cor-secundaria);
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+.secao-destaque {
+  background-color: #fff;
+  border: 1px solid var(--cor-borda);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+/* Cards de projetos (article) */
+.card {
+  background-color: #fff;
+  border: 1px solid var(--cor-borda);
+  border-left: 4px solid var(--cor-primaria);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.botao {
+  display: inline-block;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria-escura);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.7rem 1.4rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.botao:hover {
+  background-color: #e2932c;
+}
+
+fieldset {
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+}
+
+.Contribuir{
+  display: flex;
+  align-content: center;
+  align-items: last baseline;
+}
+
+
+legend {
+  font-weight: 700;
+  color: var(--cor-primaria-escura);
+  padding: 0 0.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 0.9rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: #c0392b;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+footer {
+  background-color: var(--cor-primaria-escura);
+  color: #eee;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+footer h2 {
+  color: #fff;
+}
+
+footer a {
+  color: var(--cor-secundaria);
+}
+
+address {
+  font-style: normal;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    gap: 1rem;
+  }
+}
